@@ -1,4 +1,4 @@
-﻿using GroceryDelivery.BusinessLayer.Interfaces;
+using GroceryDelivery.BusinessLayer.Interfaces;
 using GroceryDelivery.BusinessLayer.Services.Repository;
 using GroceryDelivery.Entites;
 using System;
@@ -24,7 +24,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// </summary>
         /// <param name="product"></param>
         /// <returns></returns>
-        public Task<Product> AddProduct(Product product)
+        public async Task<Product> AddProduct(Product product)
         {
             //do code here
             throw new NotImplementedException();
@@ -34,7 +34,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Task<IEnumerable<Product>> GetAllProduct(int? id)
+        public async Task<IEnumerable<Product>> GetAllProduct(int? id)
         {
             //do code here
             throw new NotImplementedException();
@@ -53,7 +53,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// get menu list
         /// </summary>
         /// <returns></returns>
-        public async Task<IList<Menubar>> MenuList()
+        public IList<Menubar> MenuList()
         {
             //do code here
             throw new NotImplementedException();
@@ -74,13 +74,13 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public Task<IEnumerable<Product>> ProductByName(string name)
+        public async Task<IEnumerable<Product>> ProductByName(string name)
         {
             //do code here
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ProductOrder>> OrderByuserId(int UserId)
+        public async Task<IEnumerable<ProductOrder>> OrderByuserId(int UserId)
         {
             //do code here
             throw new NotImplementedException();
