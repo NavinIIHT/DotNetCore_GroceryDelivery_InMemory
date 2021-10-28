@@ -313,7 +313,7 @@ namespace Grocerydelevery.Tests.TestCases
             try
             {
                 service.Setup(repos => repos.MenuList());
-                var result = await _GroceryServices.MenuList();
+                var result = _GroceryServices.MenuList();
                 //Assertion
                 if (result != null)
                 {
